@@ -1,0 +1,210 @@
+   
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>MAIN</title>
+   </head>
+   <style>
+      body {
+        background-image: url("IMG_20230823_160319.jpg");
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        
+   
+        
+      }
+
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        text-shadow: none;
+        animation: animate 2s linear infinite;
+      }
+      
+      
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color:white;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .sidenav a:hover {
+        color:goldenrod;
+      }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      span{
+         font-size: xx-large;
+      }
+      .pl{
+         background-color:transparent;
+         padding: 20px 500px 0px 10px;
+         display: flex;
+         border-radius: 25px;
+         text-align: center;
+         font-size: xx-large;
+         color: antiquewhite;
+         animation:glow 2000s infinite linear;
+         
+   
+      }
+      @keyframes animate {
+         0%{
+            color:#484848;
+            text-shadow: none;
+         }18%{
+            color: rgb(155, 217, 237);
+            text-shadow: 0 0 7px rgb(160, 219, 236),0 0 20px #c8e88d;
+         }
+         20%{
+            color:#484848;
+            text-shadow: none;
+         }
+         28%{
+            color:rgb(171, 229, 245);
+            text-shadow: 0 0 7px rgb(155, 208, 219),0 0 20px rgb(142, 203, 234);
+         }
+         50%{
+            color: gold;
+            text-shadow: 0 0 7px rgb(165, 238, 251),0 0 20px #6dcdde;
+         }
+         100%{
+            color: gold;
+            text-shadow: 0 0 7px gold,0 0 20px #484848;
+         }
+      }
+      @keyframes glow {
+           0%{
+           box-shadow: 10px 10px 20px lightblue,-5px -5px 20px 
+           beige;
+       }
+       50%{
+           box-shadow: 10px 10px 20px aqua,-5px -5px 20px 
+           lightblue;
+       }
+       100%{
+           box-shadow: 10px 10 px 20px greenyellow,-5px -5px 20px 
+           aqua;
+       }        
+       }
+      .l{
+         display: flex;
+         color: #f1f1f1;
+         align-items: center;
+         text-align: center;
+      }
+      .pre{
+         text-align: center;
+         color: #000000;
+      }.kk{
+         padding: 0px 0px 0px 150px;
+      }
+      
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
+      footer{
+         background-color:transparent;
+         align-items: center;
+         text-align: center;
+      }
+      .foo{
+         align-items: center;
+      }
+      .tb{
+    align-items: center;
+    text-align: center;
+    padding: 100px 0px 0px 400px;
+   }
+   
+   @media screen and (max-height: 450px) {
+     .sidenav {padding-top: 15px;}
+     .sidenav a {font-size: 18px;}
+   }
+   table{
+    font-size:x-large;
+    font-style: italic;
+    size: 100px;
+    color: #f1f1f1;
+    animation:glow 2000s infinite linear;
+   }
+   .td{
+    padding: 100px;
+   }
+      </style>
+      </head>
+      
+      <body>
+      
+      <div id="mySidenav" class="sidenav">
+         <a href="k.html">Home</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="javascript:void(0)" onclick="openmenu()">Menu List</a>
+        <a href="add.html">Todays Additional</a>
+        <a href="bill.html">BILL</a>
+        <a href="javascript:void(0)">Contact</a>
+        <a href="login.html">LogOut</a>
+   
+      </div>
+      
+      <header>
+      <div class="pl">
+         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      <div class="kk">
+         <img src="l.webp" height="100px" width="100px">
+      </div>
+            <pre style="color:antiquewhite; font-style:normal; font-size: xx-large;">
+      NATIONAL ENGINEERING COLLEGE HOSTEL MANAGEMENT SYSTEM
+      K.R.Nagar, Kovilpatti-628 503.
+            </pre>
+            <img src="c.jpg" height="100" width="100" style="padding-left:50px;">
+            <img src="f.jpg" height="100" width="100" style="padding-left:50px;">
+   
+      </div>
+      <div>
+      </div>
+      </header>
+      <div class="tb">
+         <table border="4" style="background-color:transparent; color: antiquewhite; width: 70%; height:fit-content;">
+             <tr><td>Monday</td><td>Tuesday</td><td>Wednesday</td><td>Thursday</td><td>Friday</td><td>Saturday</td><td>Sunday</td></tr>
+             <tr><td>Pongal</td><td>Idly with vada</td><td>Chappathi</td><td>Dosa</td><td>Pongal</td><td>Dosa</td><td>Idly</td></tr>
+             <tr><td>Rice And Sambar</td><td>Veg Briyani</td><td>Rice and Morkulambu</td><td>Rice And Sambar</td><td>Rice And Sambar</td><td>Puli kulambu</td><td>Briyani</td></tr>
+             <tr><td>Chappathi</td><td>Dosa</td><td>Briyani</td><td>Panner Rice</td><td>Chappathi</td><td>Poori</td><td>Dosa</td></tr>
+         </table>    
+        </div>
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      function openmenu(){
+         window.location.href="menu.html";
+      }
+      </script>
+      </body>
+   </html>

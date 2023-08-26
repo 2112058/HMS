@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>MAIN</title>
+</head>
+<style>
+   body {
+     background-image: url("IMG_20230823_160319.jpg");
+     background-size:cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+   }
+   header{
+      background-color: transparent;
+      box-shadow: #f1f1f1;
+      border-color: aliceblue;
+   }
+   .sidenav {
+     height: 100%;
+     width: 0;
+     position: fixed;
+     z-index: 1;
+     top: 0;
+     left: 0;
+     background-color: #111;
+     overflow-x: hidden;
+     transition: 0.5s;
+     padding-top: 60px;
+     text-shadow: none;
+     animation: animate 2s linear infinite;
+   }
+   
+   
+   .sidenav a {
+     padding: 8px 8px 8px 32px;
+     text-decoration: none;
+     font-size: 25px;
+     color:white;
+     display: block;
+     transition: 0.3s;
+   }
+   
+   .sidenav a:hover {
+     color:goldenrod;
+   }
+   
+   .sidenav .closebtn {
+     position: absolute;
+     top: 0;
+     right: 25px;
+     font-size: 36px;
+     margin-left: 50px;
+   }
+   span{
+      font-size: xx-large;
+   }
+   .pl{
+      background-color:transparent;
+      padding: 20px 500px 0px 10px;
+      display: flex;
+      border-radius: 25px;
+      text-align: center;
+      font-size: xx-large;
+      color: antiquewhite;
+      animation:glow 2000s infinite linear;
+   }
+   @keyframes animate {
+      0%{
+         color:#484848;
+         text-shadow: none;
+      }18%{
+         color: rgb(155, 217, 237);
+         text-shadow: 0 0 7px rgb(160, 219, 236),0 0 20px #c8e88d;
+      }
+      20%{
+         color:#484848;
+         text-shadow: none;
+      }
+      28%{
+         color:rgb(171, 229, 245);
+         text-shadow: 0 0 7px rgb(155, 208, 219),0 0 20px rgb(142, 203, 234);
+      }
+      50%{
+         color: gold;
+         text-shadow: 0 0 7px rgb(165, 238, 251),0 0 20px #6dcdde;
+      }
+      100%{
+         color: gold;
+         text-shadow: 0 0 7px gold,0 0 20px #484848;
+      }
+   }
+   @keyframes glow {
+        0%{
+        box-shadow: 10px 10px 20px lightblue,-5px -5px 20px 
+        beige;
+    }
+    50%{
+        box-shadow: 10px 10px 20px aqua,-5px -5px 20px 
+        lightblue;
+    }
+    100%{
+        box-shadow: 10px 10 px 20px greenyellow,-5px -5px 20px 
+        aqua;
+    }        
+    }
+   .l{
+      display: flex;
+      color: #f1f1f1;
+      align-items: center;
+      text-align: center;
+   }
+   .pre{
+      text-align: center;
+      color: #000000;
+   }.kk{
+      padding: 0px 0px 0px 150px;
+   }
+   
+   @media screen and (max-height: 450px) {
+     .sidenav {padding-top: 15px;}
+     .sidenav a {font-size: 18px;}
+   }
+   footer{
+      background-color:transparent;
+      align-items: center;
+      text-align: center;
+   }
+   .foo{
+      align-items: center;
+   }
+   .top{
+        padding-top: 100px;
+        padding-left: 500px;
+        align-items: center;
+        text-align: center;
+        opacity:1;
+        display: flex;
+        border-radius: 25px;
+        background-color: transparent   ;
+    }
+    .a2{
+        background-color:transparent;
+        align-items: center;
+        color: white;
+        text-align: start;
+        max-width: 500px;
+        padding-top: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom:50px ;
+        border-radius: 25px;
+        animation: glow 2000s linear infinite;
+        text-decoration: solid;
+    }
+    .a2 p{
+        color: antiquewhite;
+        font-size: x-large;
+    }
+   </style>
+   </head>
+   
+   <body>
+   
+   <div id="mySidenav" class="sidenav">
+      <a href="k.html">Home</a>
+     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+     <a href="javascript:void(0)" onclick="openmenu()">Menu List</a>
+     <a href="javascript:void(0)">Todays Additional</a>
+     <a href="bill.html">BILL</a>
+     <a href="javascript:void(0)">Contact</a>
+     <a href="login.html">LogOut</a>
+
+   </div>
+   
+   <header>
+   <div class="pl">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+   <div class="kk">
+      <img src="l.webp" height="100px" width="100px">
+   </div>
+         <pre style="color:antiquewhite; font-style:normal; font-size: xx-large;">
+    NATIONAL ENGINEERING COLLEGE HOSTEL MANAGEMENT SYSTEM
+    K.R.Nagar, Kovilpatti-628 503.
+         </pre>
+         <img src="c.jpg" height="100" width="100" style="padding-left:50px;">
+         <img src="f.jpg" height="100" width="100" style="padding-left:50px; background-blend-mode:color-burn; object-fit: contain;">
+
+   </div>
+   <div>
+   </div>
+   </header>
+   <div class="top">
+    <div class="a2">
+        <p id="da"></p>
+        <p id="l"></p> 
+        <p id="n"></p>
+        <button id="am" onclick="c()">Show</button>
+       <p id="t"></p>
+        
+        
+    </div>
+</div>
+   
+   <script>
+function getCurrentDateAndTime() {
+  const dateTime = new Date();
+  return "Current Date and Time :     "+dateTime.toLocaleString();
+}
+const dateDisplay = document.getElementById("da");
+dateDisplay.innerHTML = getCurrentDateAndTime();
+function c(){
+    const p=new Date();
+    let k=p.getDate();
+    let y=k*78;
+    let b=0.0;
+    document.getElementById("n").innerHTML=("Additional Bill:"+b);
+
+    document.getElementById("l").innerHTML=("Regular Bill:"+y);
+    document.getElementById("t").innerHTML=("Total :"+(y+b));
+
+}
+    function openNav() {
+     document.getElementById("mySidenav").style.width = "250px";
+   }
+   
+   function closeNav() {
+     document.getElementById("mySidenav").style.width = "0";
+   }
+   function openmenu(){
+      window.location.href="menu.html";
+
+
+
+   }
+   </script>
+   </body>
+</html>

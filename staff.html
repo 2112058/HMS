@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    h1{
+        color:white;
+        text-align: center;
+    }
+    label{
+        font-weight: bolder;
+    }
+    .filter{
+        animation: glow 2000s linear infinite;
+        border-radius: 25px;
+
+        padding: 40px;
+        margin: 0%;
+        margin-top: auto;
+        
+    }
+    body{
+        margin: 1%;
+        background-image: url("l.jpg");
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size: cover;
+        backdrop-filter: blur(0.5);
+        background-attachment: fixed;
+        
+    }
+    .top{
+        padding-top: 100px;
+        padding-left: 600px;
+        align-items: center;
+        text-align: center;
+        opacity:1;
+        display: flex;
+        border-radius: 25px;
+        background-color: transparent   ;
+    }
+    .a2{
+        background-color:transparent;
+        align-items: center;
+        color: white;
+        max-width: 300px;
+        text-align: center;
+        padding-top: 70px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom:50px ;
+        border-radius: 25px;
+        animation: glow 2000s linear infinite;
+        text-decoration: solid;
+    }
+        
+    
+    @keyframes glow {
+        0%{
+        box-shadow: 10px 10px 20px lightblue,-5px -5px 20px 
+        beige;
+    }
+    50%{
+        box-shadow: 10px 10px 20px aqua,-5px -5px 20px 
+        lightblue;
+    }
+    100%{
+        box-shadow: 10px 10 px 20px greenyellow,-5px -5px 20px 
+        aqua;
+    }        
+    }
+    @keyframes blink {
+        0%{
+            
+            background-color:lightblue;
+
+        }
+        25%{
+            background-color: aqua;
+        }
+        50%{
+            background-color: beige;
+        }
+        100%{
+            background-color: greenyellow;
+        }
+    }
+    .pre{
+      text-align: center;
+      color: #000000;
+   }.kk{
+      padding: 0px 0px 0px 150px;
+   }
+   .pl{
+      background-color:transparent;
+      padding: 20px 500px 0px 0px;
+      display: flex;
+      border-radius: 25px;
+      text-align: center;
+      font-size: xx-large;
+      color: antiquewhite;
+      animation:glow 2000s infinite linear;
+      
+
+   }
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEC Hostel Management System</title>
+    
+</head>
+<body>
+    <div class="pl">
+        <div class="kk">
+            <img src="l.webp" height="100px" width="100px">
+        </div>
+        <pre style="color:antiquewhite; font-style:normal; font-size: xx-large;">
+    NATIONAL ENGINEERING COLLEGE HOSTEL MANAGEMENT SYSTEM
+    K.R.Nagar, Kovilpatti-628 503.
+        </pre>
+        <img src="c.jpg" height="100" width="100" style="padding-left:50px;">
+        <img src="f.jpg" height="100" width="100" style="padding-left:50px; background-blend-mode:color-burn; object-fit: contain;">
+        
+    </div>
+    <div class="top">
+        <div class="a2">
+            
+            <label id="demo" for="name" >&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;Email:</label>
+            <input type="email" id="name" onclick="set()">
+            <br>
+            <br>
+            <label id="d1" >&emsp13;Password : </label>
+            <input type="password" id="pass">
+            <br>
+            <br>
+            <button onclick="submit()">
+                Submit
+            </button>
+            <br>
+            <br>
+            <a href="login.html" style="color:#000000; border: 1px    solid; text-decoration: none; background-color:rgb(214, 213, 213); ">Student Login</a>
+            <p id="f" style="color:rgb(255, 255, 255);"></p>
+        </div>
+    </div>
+    <div class="bg">
+    </div>*/
+    
+    
+</body>
+<script>
+    var q;
+    var w;
+    function submit(){        
+         q=document.getElementById("pass").value;
+         w=document.getElementById("name").value;
+        if(q==""){
+            document.getElementById("f").innerHTML=("Please fill the Fields");
+        }else if(w==""){
+            document.getElementById("f").innerHTML=("Please fill the Fields");
+            
+        }
+        else{
+            window.location.href="k.html";
+        }
+    }
+    function set(){
+        q="";
+        w="";
+    }
+
+</script>
+</html>

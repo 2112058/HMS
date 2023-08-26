@@ -1,0 +1,87 @@
+body{
+    background-color: black;
+    color: white;
+    background-image: url(5063299.webp);
+    background-size: cover;
+
+
+}
+h1{
+    color:wheat;
+    text-align: center;
+    margin-top: 3%;
+    margin-left: 0%;
+    margin-right: 0%;
+    max-width: 1000px;
+    animation: glow 2s linear infinite;
+
+
+}
+.head{
+    padding: 30px 400px 0px 400px;
+    
+}
+.form{
+    color: azure;
+    text-align: center;
+    padding: 150px 550px 225px 550px;
+    max-width: 400px;
+    background-size: cover;
+
+
+    
+
+}
+.ff{
+    color:white;
+    text-align: center;
+    font-style: italic;
+    animation: glow 2s linear infinite;
+    max-width: 800px;
+    max-height: 400px;
+    padding: 20px 0px 20px 0px;
+    background-image: url(5063299.webp);
+    background-size: cover;
+
+
+
+}
+a{
+    color:wheat;
+}
+@keyframes glow {
+    0%{
+        box-shadow: 10px 10px 20px red,-10px -10px 20px gold;
+    }
+    25%{
+        box-shadow: 10px 10px 20px blue,-10 -10px 20px green;
+    }
+    50%{
+        box-shadow: 10px 10px 20px rgb(15, 192, 246),-10px -10px 20px rgb(250, 49, 169);
+    }
+    100%{
+        box-shadow: 10px 10px 20px rgb(73, 209, 112),-10 -10px 20px rgb(214, 61, 231);
+
+    }
+}
+.foot{
+    background-size: cover;
+    color: goldenrod;
+    margin-top: 0%;
+    text-align: center;
+    
+}
+.screen{
+    color:blanchedalmond;
+    background-color: red;
+}
+.s{
+    color: hsl(0 0% calc((var(--active,0) * 70%) + (--base)));
+    transform-box: fill-box;
+    transform-origin: center;
+    fill:black;
+    stroke:yellow;
+    animation-delay:calc((var(--transition)*1.5)+(var(--delay)*1s));
+    animation-duration: 0.6s;
+    transition:color var(--transition);
+}
